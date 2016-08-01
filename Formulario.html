@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <title>HTML5 y CSS Formulario de contacto</title> <link href="StyleSheet.css" rel="stylesheet" />
+	</head>
+<body>
+<form class="contact_form" action="#" id="contact_form" runat="server"> 
+<div>
+ <ul> 
+	<li>
+  		<h2>Contacta con nosotros</h2>
+ 			 <span class="required_notification">* Datos requeridos</span>
+   </li>
+
+   <li> 
+   		<label for="name">Nombre*</label> 
+   		<input type="text" placeholder="John Doe" required /> 
+    </li>
+  
+    <li> 
+    	<label for="email">Correo electronico*</label>
+   		<input type="email" name="email" placeholder="info@developerji.com" required /> 
+    	 <span class="form_hint">
+    	 Formato correcto: "name@something.com"
+    	 </span>
+      </li>
+
+      <li> 
+   		<label for="telefono">Num Telefono</label> 
+   		<input type="text" placeholder="666000666"  /> 
+    </li>
+
+      <li> 
+      <label  class="label2" for="navegar">¿Cómo nos conoció?</label>  
+      <br />
+      <br />
+       <select name="navegar" size="1">  
+         <option value="1"></option>  
+         <option value="2">Búsqueda por Internet</option>
+         <option value="3">Facebook</option>  
+         <option value="4">Recomendación de un amigo</option>  
+         <option value="5">Publicidad</option>  
+        </select>  
+       </li>
+      
+    	<li> 
+       	<label class="label2" for="message">Describa su solicitud*</label>
+     	<br />
+     	<br />
+        <textarea name="message" cols="40" rows="6" required placeholder="Solicito..." ></textarea>
+     </li>
+    
+    <li>
+     <input class="input2" type="checkbox" name="1"  required value="primer_checkbox"> 
+      <label class="label4" for="cbox1">*Acepto los términos y las condiciones de privacidad </label>
+		    <br />
+         <br />
+       <label class="label4">Al enviar este formulario, usted acepta nuestra politica de privacidad.</label>
+    </li>
+
+    <li>
+    	<button class="submit" type="submit">Enviar</button>
+    </li> 
+    
+  </ul>
+  <span>Powered by Enrique de Miguel Quinzá</span>
+</div>
+         </form>
+</body>
+</html>
